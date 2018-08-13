@@ -1,0 +1,5 @@
+https://medium.com/@kayodeniyi/setting-up-tests-for-react-using-mocha-expect-and-enzyme-8f53af96fe7e
+
+https://github.com/npatro/javascript-unit-testing-with-mocha/blob/master/02-testing-function/test/controllers/login.controller.spec.js
+
+http://www.snappyjs.com/2018/03/27/effective-mocha-testing-tips-tricks/
