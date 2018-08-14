@@ -1,10 +1,11 @@
 import axios from 'axios';
 import $ from 'jquery';
 const $users = $('#users');
-const getUsers = () => {
+
+export const getUsers = () =>  {
   return axios.get('http://localhost:3333/api/articles')
     .then((res) => {
-      if ( res.data.length ) {
+      if (res.data.length == 0) {
         $users.innerHTML = 'The list is empty'
       } else {
         $users.innerHTML = res.data.join(',');
@@ -14,6 +15,4 @@ const getUsers = () => {
       $users.innerHTML = 'An error occured.'//;
       return Promise.reject(res);
     });
-}
-
-export default getUsers
+};
